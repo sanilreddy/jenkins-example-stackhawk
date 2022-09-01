@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage("Deploy site") {
       steps {
-        sh 'sudo cp index.json /var/www/html'
+        sh 'cp index.json /var/www/html'
       }
     }
     stage("Run HawkScan Test") {
